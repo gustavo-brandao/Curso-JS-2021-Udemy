@@ -6,17 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        .img-in-text{
+            width: 50px;
+            height: 44px;
+        }
 
+        .vermelho{
+            font-size: 24px;
+            color: red;
+        }
     </style>
 </head>
 <body>
     <h1>Cabeçalho</h1>
     
     <p><b>Lorem</b> <strong>dolor</strong> <i>sit</i> <em>aammooooo</em> 
+
+        
     
     <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/strong" target="_blank">amet</a> 
+
+    <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/strong" target="_blank">
+        <img class="img-in-text" src="https://seeklogo.com/images/M/mdn-logo-6DB9B0093F-seeklogo.com.png" alt="Logo da MDN">
+    </a>
     
-    consectetur adipisicing elit. Itaque laudantium atque dolorem quod, illum, maiores explicabo nobis nostrum debitis dignissimos labore eos libero enim non? Harum nesciunt eligendi illo quidem!</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias id nam, aliquam quisquam dicta qui atque unde magnam corporis aperiam tempore ab dignissimos, cupiditate, quia fugiat error ducimus quos cumque.</p>
+    <del>vermelho</del> <ins>azul</ins>
+
+    consectetur <s>adipisicing</s> <u>elit</u>. Itaque <small>laudantium</small> atque <br> dolorem 2<sup>2</sup> quod, illum H<sub>2</sub>O, maiores explicabo nobis nostrum debitis dignissimos labore eos libero enim non? Harum nesciunt eligendi illo quidem!</p>
+    
+    <hr> <!--tem que ficar fora do parágrafo-->
+
+    <p><q cite="https://www.google.com">Lorem</q> ipsum dolor sit amet, consectetur adipisicing elit. Alias id nam, aliquam quisquam dicta qui atque unde magnam <code>console.log</code> corporis aperiam tempore ab dignissimos, cupiditate, quia fugiat error ducimus quos cumque.</p>
+
+    <blockquote cite="https://www.google.com">Aqui sim eu estou fazendo um bloco de citação. <p>Segundo...</p></blockquote>
+    <!--blockquote não pode ficar dentro de um parágrafo, mas posso colocar parágrafos dentro do blockquote-->
+
+    <pre> <!--(<pre>) é a tag utilizada para representar texto pré-formatado. Um texto dentro desse elemento é tipicamente exibido em uma fonte não proporcional da mesma maneira em que o texto original foi disposto no arquivo-->
+        <code>
+            if (numero){
+                soma += numero
+            }
+            console.log(soma);
+        </code>
+    </pre>
+
+    <!--
+        span e div são contêiners genéricos, a diferença é que o span é inline, pode ser usada dentro do parágrafo
+    -->
+    <p><span class="vermelho">Lorem</span>, ipsum dolor sit amet consectetur adipisicing elit. In non, sunt iste nostrum deserunt similique repellendus corporis officia asperiores reiciendis iure autem dolore cupiditate! Fugiat ea provident quibusdam laborum sint.</p>
+
+    <div class="vermelho">Eu sou uma DIV. Eu sou um bloco.</div>
 </body>
 </html>
